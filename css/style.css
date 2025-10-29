@@ -1,6 +1,7 @@
 :root {
   --primary: #b6895b;
   --bg: #010101;
+  --warnaku: #36291d;
 }
 
 * {
@@ -124,7 +125,7 @@ color: var(--primary);
 
 
 .hero .content h1 span {
-  color: var(--primary);
+  color: var(--warnaku);
 }
 
 .hero .content p {
@@ -142,7 +143,7 @@ color: var(--primary);
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: var(--warnaku);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
