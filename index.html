@@ -27,15 +27,53 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#layanan">Layanan</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="coffe-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- search form start -->
+       <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      <!-- search form end -->
+
+      <!-- shooping cart start -->
+       <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1">
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 250K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1">
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 250K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1">
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 250K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- shooping cart end -->
+
     </nav>
     <!-- Navbar end -->
 
@@ -49,7 +87,7 @@
       </main>
      </section>
     <!-- Hero Section End -->
-
+      
     <!-- About Section Start -->
       <section id="about" class="about">
         <h2><span>Tentang</span> Kami</h2>
@@ -65,14 +103,14 @@
               Dievable Project hadir untuk mengubah momen biasa jadi karya luar biasa — dengan detail, warna, dan emosi yang hidup.
               Yuk, abadikan ceritamu bersama kami dan buat kenanganmu tetap berbicara, bahkan tanpa kata.</p>
             <p>kami tidak hanya membuat visual yang indah, tapi juga menghadirkan emosi yang bisa dirasakan setiap kali kamu melihatnya kembali.
-              Nikmati proses kreatif yang hangat, profesional, dan penuh makna hanya di tempat kami.</p>
+              Nikmati proses kreatif yang hangat, profesional, dan penuh makna hanya di tempat kami.</p>
         </div>
         </div>
       </section>
     <!-- About Section End -->
 
     <!-- Menu section start -->
-     <section id="menu" class="menu">
+     <section id="order" class="menu">
       <h2><span>Layanan</span> Kami</h2>
       <p>Mau foto keren, video cinematic, atau desain yang standout?
         Semua bisa di sini! Tim Dievable Project siap bantu kamu dari konsep sampai hasil akhir.
@@ -89,8 +127,8 @@
           <p class="menu-card-price">IDR 250K</p>
         </div>
         <div class="menu-card">
-          <img src="img/3.jpg" alt="Drone View" class="menu-card-img">
-          <h3 class="menu-card-title">- Drone View -</h3>
+          <img src="img/3.jpg" alt="Drone" class="menu-card-img">
+          <h3 class="menu-card-title">- Drone -</h3>
           <p class="menu-card-price">IDR 150K</p>
         </div>
         <div class="menu-card">
@@ -106,6 +144,76 @@
       </div>
     </section>
     <!-- Menu section end -->
+
+    <!-- products section start -->
+     <section class="products" id="layanan">
+      <h2><span>Layanan</span> Unggulan</h2>
+      <p>Berikut beberapa layanan kami yang paling sering dipesan</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#item-detail-modal1" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/1.jpg" alt="Product 1">
+          </div>
+          <div class="product-content">
+            <h3>Cinematography Film</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 250K <span>IDR 300K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#item-detail-modal2" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/2.jpg" alt="Product 2">
+          </div>
+          <div class="product-content">
+            <h3>Photography Wedding</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 200K <span>IDR 250K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#item-detail-modal3" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/3.jpg" alt="Product 3">
+          </div>
+          <div class="product-content">
+            <h3>Drone View</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 150K <span>IDR 200K</span></div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- products section end -->
 
     <!-- contack section start -->
      <section id="contact" class="contact">
@@ -154,7 +262,71 @@
      </footer>
     <!-- footer end -->
 
-
+     <!-- modal box item detail start -->
+      <div class="modal" id="item-detail-modal1">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/products/1.jpg" alt="Product 1">
+            <div class="product-content">
+              <h3>Cinematography Film</h3>
+              <p>Setiap tatapan, setiap langkah, direkam dengan rasa. Cinematography Film kami bukan hanya dokumentasi, tapi perjalanan emosi yang diubah menjadi karya visual yang hidup. Biarkan kisahmu berbicara melalui warna, cahaya, dan irama gambar yang menawan.</p>
+              <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 250K <span></span></div>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>Simpan ke keranjang</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="item-detail-modal2">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/products/2.jpg" alt="Product 2">
+            <div class="product-content">
+              <h3>Photography Wedding</h3>
+              <p>Bukan sekadar foto, tapi kenangan yang dihidupkan kembali. Kami menangkap cinta kalian lewat setiap cahaya dan gerak kecil yang berarti. Dari pelukan pertama hingga senyum terakhir di pelaminan, biarkan setiap bidikan menjadi saksi kisah cinta yang abadi.</p>
+              <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 200K <span></span></div>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>Simpan ke keranjang</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="item-detail-modal3">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/products/3.jpg" alt="Product 3">
+            <div class="product-content">
+              <h3>Drone View</h3>
+              <p>Lihat dunia dari ketinggian, rasakan kebebasan dalam setiap frame. Dengan sudut pandang sinematik dari udara, kami menghadirkan keindahan yang tak terlihat dari bawah—mewujudkan visual yang megah, lembut, dan tak terlupakan dalam setiap detiknya.</p>
+              <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 150K <span></span></div>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>Simpan ke keranjang</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- modal box item detail end -->
 
 
 
