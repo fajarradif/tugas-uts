@@ -349,7 +349,7 @@ color: var(--primary);
 }
 
 .hero .content p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 100;
@@ -375,7 +375,7 @@ color: var(--primary);
 .products,
 .results,
 .contact {
-  padding: 8rem 7% 1.4rem;
+  padding: 2rem 7% 1.4rem;
   text-align: center;
 }
 
@@ -386,7 +386,7 @@ color: var(--primary);
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-style: italic;
 }
 
@@ -408,7 +408,6 @@ color: var(--primary);
 
 .about .row .about-img img {
   width: 100%;
-  border-radius: 1rem;
 }
 
 .about .row .content {
@@ -421,59 +420,11 @@ color: var(--primary);
   margin-bottom: 1rem;
 }
 
-
-.about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.6rem;
-  font-weight: 100;
-  line-height: 1.6;
-}
-
-/* menu section */
-.menu h2,
-.contact h2 {
-  margin-bottom: 1rem;
-}
-
-.menu p,
-.contact p {
-  text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  font-weight: 100;
-  line-height: 1.6;
-}
-
-.no-results {
-  text-align: center;
-  color: #ccc;
-  font-size: 1.2rem;
-  margin-top: 2rem;
-}
-
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
   justify-content: center;
   gap: 3rem;
-}
-
-.menu .row .menu-card {
-  text-align: center;
-  padding-bottom: 2rem;
-  width: 200px;
-}
-
-.menu .row .menu-card img {
-  border-radius: 1rem;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.menu .row .menu-card .menu-card-title {
-  margin-top: 1rem auto 0.5rem;
 }
 
 .menu .row .menu-card .menu-card-buttons {
@@ -494,6 +445,27 @@ color: var(--primary);
   background-color: var(--warnaku);
 }
 
+.menu .row .menu-card .menu-card-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.menu .row .menu-card p {
+  max-width: 70%;
+  margin: 2rem auto 2rem;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 1.6rem;
+}
+
+.menu p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
 /* Product section */
 .products .row {
   display: grid;
@@ -506,7 +478,6 @@ color: var(--primary);
   text-align: center;
   border: 1px solid #666;
   padding: 2rem;
-  border-radius: 1rem;
 }
 
 .products .product-icon {
@@ -516,12 +487,12 @@ color: var(--primary);
 }
 
 .products .product-icon a {
-  width: 6rem;
+  width: 4rem;
   height: 4rem;
   color: #fff;
-  margin: 0.1rem;
+  margin: 0.3rem;
   border: 1px solid #666;
-  border-radius: 0.2rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,7 +508,10 @@ color: var(--primary);
 }
 
 .products .product-image img {
-  height: 25rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .products .product-content h3 {
@@ -564,6 +538,11 @@ color: var(--primary);
 text-decoration: line-through;
 font-weight: lighter;
 font-size: 1rem;
+}
+
+.products p {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
 }
 
 /* results section */
@@ -684,11 +663,15 @@ font-size: 1rem;
   flex-wrap: wrap;
 }
 
+.contact p {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
 .contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 1rem;
 }
 
 .contact .row form {
@@ -722,7 +705,6 @@ font-size: 1rem;
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
-  border-radius: 1rem;
 }
 
 
@@ -844,11 +826,8 @@ footer .credit a {
   color: var(--bg);
   margin: 15% auto;
   padding: 1.2rem;
-  padding-bottom: 8rem;
   border: 1px solid #666;
   width: 80%;
-  min-height: 30rem;
-  border-radius: 1rem;
   animation: animateModal 0.5s;
 }
 
@@ -876,16 +855,12 @@ footer .credit a {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  padding-bottom: 4rem;
 }
 
 .modal-content img {
   height: 20rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
-  border: 2px solid var(--primary);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content p {
@@ -908,20 +883,20 @@ footer .credit a {
 .modal-content a {
   display: flex;
   gap: 1rem;
-  width: 12rem;
+  align-items: center;
   background-color: var(--warnaku);
   color: #fff;
   padding: 1rem 1.6rem;
   position: absolute;
-  bottom: 1rem;
+  top: 0.5rem;
   right: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .modal-content a:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary);
 }
 
 @keyframes fadeInGlow {
@@ -1038,5 +1013,10 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .menu .row .menu-card .menu-card-buttons {
+    display: flex;
+    justify-content: center;
   }
 }

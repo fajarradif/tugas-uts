@@ -408,7 +408,6 @@ color: var(--primary);
 
 .about .row .about-img img {
   width: 100%;
-  border-radius: 1rem;
 }
 
 .about .row .content {
@@ -424,7 +423,7 @@ color: var(--primary);
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
 }
@@ -466,10 +465,8 @@ color: var(--primary);
 }
 
 .menu .row .menu-card img {
-  border-radius: 1rem;
+  border-radius: 50%;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -478,16 +475,23 @@ color: var(--primary);
 
 .menu .row .menu-card .menu-card-buttons {
   display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
   justify-content: center;
 }
 
 .menu .row .menu-card .menu-card-buttons a {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   background-color: var(--primary);
   color: #fff;
+  border: none;
   border-radius: 0.5rem;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
   transition: background-color 0.3s;
+  display: inline-block;
+  text-align: center;
 }
 
 .menu .row .menu-card .menu-card-buttons a:hover {
@@ -506,7 +510,6 @@ color: var(--primary);
   text-align: center;
   border: 1px solid #666;
   padding: 2rem;
-  border-radius: 1rem;
 }
 
 .products .product-icon {
@@ -516,12 +519,12 @@ color: var(--primary);
 }
 
 .products .product-icon a {
-  width: 6rem;
+  width: 4rem;
   height: 4rem;
   color: #fff;
-  margin: 0.1rem;
+  margin: 0.3rem;
   border: 1px solid #666;
-  border-radius: 0.2rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -688,7 +691,6 @@ font-size: 1rem;
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 1rem;
 }
 
 .contact .row form {
@@ -722,7 +724,6 @@ font-size: 1rem;
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
-  border-radius: 1rem;
 }
 
 
@@ -844,11 +845,8 @@ footer .credit a {
   color: var(--bg);
   margin: 15% auto;
   padding: 1.2rem;
-  padding-bottom: 8rem;
   border: 1px solid #666;
   width: 80%;
-  min-height: 30rem;
-  border-radius: 1rem;
   animation: animateModal 0.5s;
 }
 
@@ -876,16 +874,12 @@ footer .credit a {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  padding-bottom: 4rem;
 }
 
 .modal-content img {
   height: 20rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
-  border: 2px solid var(--primary);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content p {
@@ -915,13 +909,6 @@ footer .credit a {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
-}
-
-.modal-content a:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fadeInGlow {
